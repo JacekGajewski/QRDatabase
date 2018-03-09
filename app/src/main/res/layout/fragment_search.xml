@@ -1,0 +1,56 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:baselineAligned="false">
+
+    <TextView
+        android:id="@+id/product_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textAllCaps="true"
+        android:textColor="@color/blue"
+        android:text="@string/search_title" />
+
+    <EditText
+        android:id="@+id/search_brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_id"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="26dp"
+        android:hint="@string/search_insert_brand"
+        android:inputType="textCapWords"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/blue"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/search_id"
+        android:layout_below="@+id/search_brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="19dp"
+        android:hint="@string/search_insert_id"
+        android:inputType="number"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/blue"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/search_button"
+        style= "@style/PortraitButton"
+        android:text="SEARCH"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

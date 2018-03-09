@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+
+    <!--Color of upper bar-->
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#032032</color>
+
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="blue">#143d55</color>
+
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+
+</resources>

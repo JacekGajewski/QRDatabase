@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/cardView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:id="@+id/product_id_scan_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textAllCaps="true"
+                    android:text="10101010101" />
+                <com.rey.material.widget.CheckBox
+                    android:id="@+id/watchlist_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="8dp"
+                    app:cbd_strokeColor = "#008800"
+                    />
+
+                <ImageView
+                    android:id="@+id/stats_imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/product_id_scan_result"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="14dp"
+                    app:srcCompat="@drawable/ic_person"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="26dp"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:text="Cos"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="19dp"
+                android:maxLines="1">
+
+                <TextView
+                    android:id="@+id/product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 PLN"/>
+
+                <TextView
+                    android:id="@+id/product_price_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="+0.01"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/product_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="19dp"
+                android:maxLines="1"
+                android:text="01/01/2000"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <Button
+        android:id="@+id/edit_button"
+        style= "@style/PortraitButton"
+        android:text="@string/edit_button" />
+
+</RelativeLayout>

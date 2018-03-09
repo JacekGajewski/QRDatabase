@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:cardCornerRadius="8dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_product_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="10101010101" />
+
+            <EditText
+                android:id="@+id/edit_product_beand_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="@string/search_insert_brand"
+                android:inputType="textCapWords"
+                android:textSize="16sp"
+                android:maxLines="1" />
+
+
+            <EditText
+                android:id="@+id/edit_product_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="@string/search_insert_id"
+                android:inputType="numberDecimal"
+                android:digits="0123456789.,"
+                android:textSize="16sp"
+                android:maxLines="1"/>
+
+            <EditText
+                android:id="@+id/edit_product_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="@string/search_insert_id"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:maxLines="1"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <Button
+        android:id="@+id/edit_product_save_button"
+        style= "@style/PortraitButton"
+        android:text="@string/save_button" />
+</RelativeLayout>
